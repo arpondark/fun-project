@@ -3,7 +3,7 @@ import './Home.css';
 import profileImage from '../assets/a.jpg'; // Path to your image
 
 const Home = () => {
-  const [message, setMessage] = useState('Do you love me Bushra?');
+  const [message, setMessage] = useState('Do you love me?');
   const wrapperRef = useRef(null);
   const noBtnRef = useRef(null);
 
