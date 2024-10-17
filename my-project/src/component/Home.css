@@ -18,6 +18,12 @@ body {
   background-image:url(../assets/a.jpg);
   overflow: hidden; /* Prevents the "No" button from overflowing the viewport */
 }
+p.ar{
+  background-color: #7d2ae8;
+  color: white;
+  position: absolute;
+  top: 440px;
+}
 
 /* Wrapper styles */
 .wrapper {

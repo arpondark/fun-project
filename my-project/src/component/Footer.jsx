@@ -11,7 +11,8 @@ const Footer = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="c">
-        <p>© 2024 MD SHAZAN MAHMUD ARPON</p>
+        <p>© 2024 Developed By</p> 
+        <p> MD SHAZAN MAHMUD ARPON</p>
       </div>
       <div className="social">
         <ul className="social-me">
