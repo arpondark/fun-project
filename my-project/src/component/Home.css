@@ -1,0 +1,118 @@
+/* Importing the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image:url(../assets/a.jpg);
+  overflow: hidden; /* Prevents the "No" button from overflowing the viewport */
+}
+
+/* Wrapper styles */
+.wrapper {
+  position: relative;
+  background-image: url(../assets/c.png);
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; /* Ensures the button doesn't leave the wrapper */
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Question text */
+.question {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Button styles */
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  background-color: #7d2ae8;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a1ab3;
+}
+
+.no-btn {
+  position: absolute;
+  background-color: #7d2ae8;
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+.yes-btn {
+  margin-top: 15px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .question {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95%;
+    height: 450px; /* Ensures there's enough space for the button to move */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .question {
+    font-size: 1.2em;
+  }
+
+  button {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .no-btn {
+    /* Ensure enough space for the "No" button to move around */
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transition: top 0.2s, left 0.2s; /* Smooth movement for mobile */
+  }
+}
