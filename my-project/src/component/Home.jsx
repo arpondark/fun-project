@@ -8,7 +8,7 @@ const Home = () => {
   const noBtnRef = useRef(null);
 
   const handleYesClick = () => {
-    setMessage('I Love You Too Bushra :)');
+    setMessage('I Love You Too :)');
   };
 
   const handleNoHover = () => {
@@ -51,7 +51,7 @@ const Home = () => {
     <>
       <div className="wrapper" ref={wrapperRef} style={{ position: 'relative', height: '480px', width: '300px', border: '1px solid black' }}>
         <img 
-          src={profileImage} // Use the imported image here
+          src={profileImage} 
           alt="Circular Profile"
           className="circle-image"
           style={{
